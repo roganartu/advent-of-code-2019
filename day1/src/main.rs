@@ -1,4 +1,4 @@
-use std::io::{self, Read, Write};
+use std::io::{self, Read};
 
 type Result<T> = ::std::result::Result<T, Box<dyn (::std::error::Error)>>;
 
@@ -17,7 +17,7 @@ fn part1(input: &str) -> Result<()> {
         let x = l.parse::<i32>()?;
         sum += x / 3 - 2;
     }
-    writeln!(io::stdout(), "{}", sum)?;
+    println!("{}", sum);
     Ok(())
 }
 
@@ -26,7 +26,7 @@ fn part2(input: &str) -> Result<()> {
     for l in input.lines() {
         sum += fuel(l.parse::<i32>()?);
     }
-    writeln!(io::stdout(), "{}", sum)?;
+    println!("{}", sum);
     Ok(())
 }
 

@@ -1,4 +1,4 @@
-use std::io::{self, Read, Write};
+use std::io::{self, Read};
 
 type Result<T> = ::std::result::Result<T, Box<dyn (::std::error::Error)>>;
 
@@ -12,11 +12,11 @@ fn main() -> Result<()> {
 }
 
 fn part1(input: &str) -> Result<()> {
-    writeln!(io::stdout(), "{}", "TODO: part1")?;
+    println!("{}", "TODO: part1");
     Ok(())
 }
 
 fn part2(input: &str) -> Result<()> {
-    writeln!(io::stdout(), "{}", "TODO: part2")?;
+    println!("{}", "TODO: part2");
     Ok(())
 }
